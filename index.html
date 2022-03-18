@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>nothing</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="script1.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function(){
+                $('#btn1').click(()=>$('.c1').toggle(1000));
+                $('#btn2').click(()=>$('.c2').toggle(1000));
+                $('#btn3').click(()=>$('.c3').toggle(1000));
+            })
+        </script>
+        <script type="text/javascript">
+            var audio = new Audio();
+            audio.src = "wee.mp3";
+        </script>
+    </head>
+    <body>
+        <div class="divcls">
+            <button id="btn1" class="sty">SELF</button>
+            <p class="c1">Hello!, This is ME<br>
+                My name is Milind, Im studying in Presidency University. Recently got placed in Kanini Software solution.
+                I like to play Basketball. I play Guitar. I love Icecreams. Coding is my passion.
+                <br>
+                I was born on march 29 2000. Dont forget to wish me.
+                <br><br>
+            </p>
+            <button id="btn2" class="sty">FAMILY</button>
+            <p class="c2">Hello!, This is my Family<br>
+                I live in a nuclear family.
+                The nuclear family is the traditional type of family structure. 
+                our family type consists of two parents and two children. 
+                The nuclear family was long held in esteem by society as being the ideal in which to raise children. 
+                Children in nuclear families receive strength and stability from the two-parent structure and generally
+                 have more opportunities due to the financial ease of two adults.
+                <br><br>
+            </p>
+            <button id="btn3" class="sty" onclick="audio.play();">FRIENDS</button>
+            <p class="c3">Hello!,These are my friends<br>
+                A friend in a need is a friends a deed.<br>
+                F.R.I.E.N.D.S.<br>
+                the series is lit...<br>
+                My best friends are Prem and Priyanshu
+                <br><br>
+            </p>
+        </div>
+    </body>
+</html>
